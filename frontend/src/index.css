@@ -173,15 +173,13 @@ button {
   width: 100%;
 }
 
-/* Navbar Styles */
 .navbar-glass {
   position: sticky;
   top: 0;
   z-index: 50;
-  background: var(--glass-bg);
-  backdrop-filter: blur(var(--glass-blur));
-  -webkit-backdrop-filter: blur(var(--glass-blur));
-  border-bottom: 1px solid var(--glass-border);
+  background-color: var(--bg-secondary);
+  border-bottom: 1px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
   transition: background-color var(--transition-normal), border-color var(--transition-normal);
 }
 
@@ -392,10 +390,16 @@ button {
   background-image: url('https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=1920&q=80');
   background-size: cover;
   background-position: center;
-  height: 520px;
+  height: 380px;
   display: flex;
   align-items: center;
   color: white;
+}
+
+@media (min-width: 768px) {
+  .hero-section {
+    height: 520px;
+  }
 }
 
 .hero-overlay {
@@ -647,6 +651,11 @@ button {
   appearance: none;
   cursor: pointer;
   font-weight: 500;
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%236B7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='m6 8 4 4 4-4'/%3E%3C/svg%3E");
+  background-position: right 12px center;
+  background-repeat: no-repeat;
+  background-size: 1.25rem;
+  padding-right: 40px !important;
 }
 
 
